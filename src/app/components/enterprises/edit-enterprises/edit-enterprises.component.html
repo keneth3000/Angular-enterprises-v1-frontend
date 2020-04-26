@@ -1,0 +1,30 @@
+<div class="edit-employee-container">
+    <form [formGroup]="editEnterpriseForm" (ngSubmit)="editEnterprises(editEnterpriseForm.value)">
+        <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput placeholder="Nombre" formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Telefono</mat-label>
+            <input matInput placeholder="Telefono" formControlName="phone">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Correo</mat-label>
+            <input matInput placeholder="Correo" formControlName="email" type="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Direccion</mat-label>
+            <input matInput placeholder="Cargo" formControlName="address">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Usuario" formControlName="username">
+        </mat-form-field>
+
+
+        <div class="container-button">
+            <input type="submit" class="mat-flat-button"
+            value="Guardar" [mat-dialog-close]="true">
+        </div>
+    </form>
+</div>

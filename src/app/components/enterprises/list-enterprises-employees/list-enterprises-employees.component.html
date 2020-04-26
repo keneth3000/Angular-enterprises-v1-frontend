@@ -1,0 +1,22 @@
+<div class="container">
+    <mat-card class="post-card" *ngFor="let enterprise of empresa">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ enterprise.name }}</mat-card-title>
+            <mat-card-subtitle>{{enterprise.phoneNumber}}</mat-card-subtitle>
+        </mat-card-header>
+        <img
+            mat-card-image
+            src="../../../../assets/images/user.png"
+            alt="User default"
+        />
+        <mat-card-content>
+            <p class="content">{{enterprise.charge}} - {{enterprise.email}}</p>
+        </mat-card-content>
+        <mat-card-actions>        
+            <button mat-stroked-button color="warn" (click)="onDeleteEmployeeEnterprise(enterprise._id, enterprise)">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </mat-card-actions>
+    </mat-card>
+</div>

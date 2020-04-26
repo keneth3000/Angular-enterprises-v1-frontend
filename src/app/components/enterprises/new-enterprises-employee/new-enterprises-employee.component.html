@@ -1,0 +1,32 @@
+<div class="new-enterprises-container">
+    <form [formGroup]="newEnterprisesE" (ngSubmit)="saveEnterprisesE(newEnterprisesE.value)">
+        <mat-form-field>
+            <mat-label>Nombre</mat-label>
+            <input matInput formControlName="name" placeholder="Nombre" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Telefono</mat-label>
+            <input matInput formControlName="phoneNumber" placeholder="Telefono" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Correo</mat-label>
+            <input matInput formControlName="email" placeholder="Correo" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Cargo</mat-label>
+            <input matInput formControlName="charge" placeholder="Cargo" />
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Departamento</mat-label>
+            <input matInput formControlName="department" placeholder="Departamento" />
+        </mat-form-field>
+
+        <div class="container-button">
+            <input type="submit" class="mat-flat-button" value="Guardar" [mat-dialog-close]="true"/> 
+        </div>
+    </form>
+</div>

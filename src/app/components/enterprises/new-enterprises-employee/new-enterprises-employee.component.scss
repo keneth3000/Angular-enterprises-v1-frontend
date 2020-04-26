@@ -1,0 +1,24 @@
+.new-enterprises-container {
+    display: flex;
+    flex-direction: column;
+    form {
+      margin-bottom: 20px;
+  
+      input.mat-flat-button {
+        width: 100%;
+        background-color: #1f1f1f;
+      }
+      input.mat-flat-button:hover {
+        background-color: #757070;
+      }
+  
+      .container-button {
+        min-height: 80px;
+      }
+  
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+  

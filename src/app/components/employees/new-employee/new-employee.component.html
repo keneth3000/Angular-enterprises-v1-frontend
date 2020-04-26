@@ -1,0 +1,32 @@
+<div class="new-employee-container">
+  <form [formGroup]="newEmployeeForm" (ngSubmit)=saveEmployees(newEmployeeForm.value)>
+    <mat-form-field>
+      <mat-label>Nombre</mat-label>
+      <input matInput placeholder="Nombre del empleado" formControlName="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Telefono</mat-label>
+      <input matInput placeholder="Telefono del empleado" formControlName="phoneNumber">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Correo</mat-label>
+      <input matInput placeholder="Correo del empleado" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Cargo</mat-label>
+      <input matInput placeholder="Cargo del empleado" formControlName="charge">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Departamento</mat-label>
+      <input matInput placeholder="Departamento del empleado" formControlName="department">
+    </mat-form-field>
+
+    <div class="container-button">
+      <input type="submit" class="mat-flat-button" value="Guardar" [mat-dialog-close]="true">
+  </div>
+  </form>
+</div>
